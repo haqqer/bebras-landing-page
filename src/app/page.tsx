@@ -84,10 +84,10 @@ export default function Landing() {
       </div>                      
       <header className="mx-auto pt-4 md:pt-32 px-4 md:px-16">
         <div className="container lg:w-1/2 md:w-full sm:w-full">
-          <p className="lg:text-6xl lg:leading-snug leading-snug text-5xl font-bold">
-            Kembangkan ketrampilan berpikir si kecil
+          <p className="lg:text-6xl lg:leading-snug leading-snug text-5xl font-GothamRounded">
+            Kembangkan keterampilan berpikir si kecil
           </p>
-          <p className="font-light text-2xl leading-9 py-5">
+          <p className="font-thin text-2xl leading-9 py-5 font-GothamRounded">
             Tingkatkan kompetensi sosial dan emosional si kecil dan siapkan ia untuk mengarungi dunia.
           </p>
           <button className="flex gap-4 my-5 bg-yellow-400 py-3 px-8 text-amber-700 rounded-3xl font-medium">
@@ -112,8 +112,8 @@ export default function Landing() {
       </header>
       <main className="mx-auto pt-28 w-full relative flex justify-center">
         <div className="flex flex-col gap-6 text-center px-4 md:px-24 lg:w-2/3 w-full">
-          <div className="text-lg text-amber-500 tracking-wide font-semibold">TENTANG BEBRAS</div>
-          <div className="text-3xl md:text-6xl font-semibold">Didukung Oleh Google</div>
+          <div className="text-lg text-amber-500 tracking-wide font-GothamRounded">TENTANG BEBRAS</div>
+          <div className="text-3xl md:text-6xl font-GothamRounded">Didukung Oleh Google</div>
           <div className="text-lg font-light">Kegiatan yang dilaksanakan oleh Bebras Indonesia untuk mengajarkan Computational Thinking merupakan cabang dari organisasi Bebras International.</div>
         </div>
       </main>
@@ -122,12 +122,12 @@ export default function Landing() {
       </div>
       {/* Computational Thinking */}
       <section className="w-full flex flex-col-reverse gap-10 lg:flex-row pt-16">
-        <div className="">
-          <img className="w-full md:w-[1200px]" src="/assets/BackgroundWebsite/computationalThinking.png" alt="" />
+        <div className="w-full">
+          <img className="w-2/3 lg:w-[1200px]" src="/assets/BackgroundWebsite/computationalThinking.png" alt="" />
         </div>
         <div className="flex flex-col gap-6 px-10">
-          <div className="text-lg text-amber-500 tracking-wide font-semibold">COMPUTATIONAL THINKING</div>
-          <div className="text-3xl md:text-5xl font-semibold">Berpikir runut itu mudah</div>
+          <div className="text-lg text-amber-500 tracking-wide font-GothamRounded font-semibold">COMPUTATIONAL THINKING</div>
+          <div className="text-3xl md:text-5xl font-GothamRounded font-semibold">Berpikir runut itu mudah</div>
           <div className="text-lg font-light">Kenalkan cara penyelesaian masalah secara komputasional kepada anak sedari dini agar ia terbiasa mencari solusi yang efektif dan efisien.</div>  
           <div className="grid grid-cols-2 gap-10 md:gap-5">
             <div className="flex flex-col gap-4">
@@ -172,7 +172,7 @@ export default function Landing() {
                 Identifikasi Masalah
               </div>              
               <div className="text-base font-light">
-                Si kecil akan belaiar mengembangkan sistem, membuat daftar petuniuk dan langkah-langkah pemecahan masalah secara efektif dan efisien.
+                Si kecil akan belaiar mengembangkan sistem, membuat daftar petunjuk dan langkah-langkah pemecahan masalah secara efektif dan efisien.
               </div>              
             </div>
           </div>        
@@ -181,8 +181,8 @@ export default function Landing() {
       {/* Aplikasi Bebras Pandai */}
       <section className="w-full flex flex-col gap-10 lg:flex-row pt-16">
         <div className="flex flex-col gap-6 px-10">
-          <div className="text-lg text-amber-500 tracking-wide font-semibold">APLIKASI BEBRAS PANDAI</div>
-          <div className="text-3xl md:text-5xl font-semibold">Bukan sembarang game</div>
+          <div className="text-lg text-amber-500 tracking-wide font-GothamRounded font-semibold">APLIKASI BEBRAS PANDAI</div>
+          <div className="text-3xl md:text-5xl font-GothamRounded font-semibold">Bukan sembarang game</div>
           <div className="text-lg font-light">Belajar tidak harus selalu menjadi momok yang menakutkan. Bebras menggunakan pendekatan baru berstandar internasional.</div>  
           <div className="grid grid-cols-2 gap-10 md:gap-5">
             <div className="flex flex-col gap-4">
@@ -231,8 +231,8 @@ export default function Landing() {
             </div>
           </div>        
         </div>
-        <div className="">
-          <img className="w-full md:w-[1200px]" src="/assets/BackgroundWebsite/aplikasiBebrasPandai.png" alt="" />
+        <div className="w-full flex justify-end">
+          <img className="w-2/3 lg:w-[1200px]" src="/assets/BackgroundWebsite/aplikasiBebrasPandai.png" alt="" />
         </div>        
       </section>
       {/* Testimonial */}
@@ -252,7 +252,7 @@ export default function Landing() {
         </div>
         <div className="pt-16 flex gap-12 overflow-x-scroll">
           {testimonial.map((e: any) => (
-            <div key={e.name} className="flex-none w-full sm:w-/12 md:w-1/3">
+            <div key={e.name} className="flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
               <div className="p-8 bg-white rounded-xl">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={0.8} stroke="currentColor" className="text-purple-700 w-12 h-12">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
@@ -272,6 +272,63 @@ export default function Landing() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+      <section className="relative">
+        <div className="absolute -z-10 -top-80 left-0 hidden lg:flex">
+          <img src="/assets/BackgroundWebsite/vector.svg" alt="" />
+        </div>
+        <div className="absolute -z-10 bottom-0 right-0 hidden lg:flex">
+          <img src="/assets/BackgroundWebsite/ellipse_4.svg" alt="" />
+        </div>
+        <div className="w-full md:px-20 flex flex-col md:flex-row text-center lg:text-left justify-center gap-12 py-20 md:py-28">
+          <div className="flex px-10 md:px-0">
+            <img src="/assets/BackgroundWebsite/personKegiatanGerakanPandai.svg" alt="" />
+          </div>
+          <div className="flex flex-col my-auto gap-6 w-full md:w-1/2 p-6 px-4 md:px-0">
+            <div className="text-lg text-amber-500 tracking-wide font-GothamRounded font-semibold">KEGIATAN GERKAKAN PANDAI</div>
+            <div className="text-3xl md:text-5xl font-GothamRounded font-semibold">Bebras Pandai hadir untuk anak Indonesia</div>
+            <div className="text-lg font-light">Gerakan Pandai telah diselenggarakan untuk 2 juta siswa, melalui 22,000 guru berbagai mata pelajaran di 22 daerah di Indonesia.</div>          
+            <a className="hidden md:flex gap-4 text-amber-700 font-medium tracking-wider text-lg" href="">
+              <span>Ikuti kegiatan Bebras lainnya </span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.2} stroke="currentColor" className="w-4 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+            </a>  
+          </div>
+        </div>
+      </section>
+      <section className="relative bg-purple-800">
+        <div className="absolute z-10 top-0 right-0 hidden md:flex">
+          <img src="/assets/BackgroundWebsite/ellipse_1.svg" alt="" />
+        </div>
+        <div className="absolute z-10 bottom-0 -left-96 md:left-10">
+          <img src="/assets/BackgroundWebsite/ellipse_2.svg" alt="" />
+        </div>
+        <div className="absolute z-10 bottom-0 right-0 hidden md:flex">
+          <img src="/assets/BackgroundWebsite/ellipse_3.svg" alt="" />
+        </div>
+        <div className="w-full px-5 md:px-20 py-20 flex flex-col md:flex-row md:justify-between">
+          <div className="w-full md:w-2/3 flex flex-col text-center lg:text-left gap-4 z-20">
+            <div className="text-lg text-amber-500 tracking-wide">KITA SEMUA INGIN YANG TERBAIK UNTUK SI BUAH HATI</div>
+            <div className="text-3xl md:text-6xl font-GothamRounded font-semibold leading-8 text-neutral-50">Ingin si kecil bisa berpikir jernih tentang masalahnya?</div>
+          </div>
+          <div className="flex flex-col">
+            <div className="z-20 pt-5 md:pt-10 mx-auto">
+              <button className="flex gap-4 my-5 bg-yellow-400 py-3 px-4 md:px-8 text-amber-800 rounded-3xl text-xl font-semibold">
+                <span>Mulai di sini</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.2} stroke="currentColor" className="w-4 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </button>
+            </div>            
+            <div className="z-20 text-neutral-50 md:text-amber-700 text-center">
+              Gabung dengan 20,000+ anak lainnya!
+            </div>           
+          </div>
+        </div>
+        <div className="flex justify-center">
+          <img className="z-20" src="/assets/BackgroundWebsite/macbook.svg" alt="" />
         </div>
       </section>
       <footer className="mx-auto py-3 px-4 md:px-16 w-full">

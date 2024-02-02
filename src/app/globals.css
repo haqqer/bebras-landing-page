@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+  font-family: 'Gotham Rounded';
+  src: url('/Flamante-Round-Book-FFP.ttf');
+}
