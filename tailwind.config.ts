@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        GothamRounded: ['Gotham Rounded', 'serif'],
+       },
     },
   },
   plugins: [],
